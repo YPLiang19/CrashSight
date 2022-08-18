@@ -1,0 +1,16 @@
+PODS:
+  - CrashSight (4.2.10)
+
+DEPENDENCIES:
+  - CrashSight (from `../`)
+
+EXTERNAL SOURCES:
+  CrashSight:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CrashSight: bccd23aac249b51f400b08a2ef1431229aafa789
+
+PODFILE CHECKSUM: a0fb086b98839c0965ff24380978d9ad819e8564
+
+COCOAPODS: 1.11.2
