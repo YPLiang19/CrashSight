@@ -1,6 +1,6 @@
 {
   "name": "CrashSight",
-  "version": "4.2.10",
+  "version": "4.2.14",
   "summary": "CrashSight",
   "description": "CrashSight is a Crash catch SDK",
   "homepage": "https://crashsight.qq.com",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/YPLiang19/CrashSight.git",
-    "tag": "4.2.10"
+    "tag": "4.2.14"
   },
   "vendored_frameworks": "CrashSight.framework",
-  "frameworks": "SystemConfiguration",
+  "frameworks": [
+    "SystemConfiguration",
+    "Security",
+    "UIKit"
+  ],
+  "weak_frameworks": "MetricKit",
   "libraries": [
     "z",
     "c++"

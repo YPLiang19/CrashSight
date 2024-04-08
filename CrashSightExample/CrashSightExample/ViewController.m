@@ -18,5 +18,10 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)testException:(id)sender {
+    
+    NSArray *arr = [NSArray array];
+    id o =  arr[1];
+}
 
 @end

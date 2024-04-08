@@ -1,7 +1,7 @@
 //
 //  CrashSight.h
 //
-//  Version: 4.2.10(744)
+//  Version: 4.2.14(950)
 //
 //  Copyright (c) 2017年 
 //
@@ -11,7 +11,7 @@
 #import "CrashSightConfig.h"
 #import "CrashSightLog.h"
 
-#define GCLOUD_VERSION_CRASHSIGHT  "GCLOUD_VERSION_CRASHSIGHT_4.2.10.744.sgprod"
+#define GCLOUD_VERSION_CRASHSIGHT  "GCLOUD_VERSION_CRASHSIGHT_4.2.14.950.sgprod"
 
 CS_START_NONNULL
 
@@ -202,6 +202,11 @@ CS_START_NONNULL
  *  设置上报附件的绝对路径
  */
 + (void)setAttachmentPath:(NSString *)path;
+
++ (int)getCrashThreadId;
+
+
++ (NSString *)crashSightSessionId;
 
 CS_END_NONNULL
 

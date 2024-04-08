@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     CrashSightConfig *config = [[CrashSightConfig alloc] init];
     config.debugMode = YES;
+    config.crashProcessTimeout = 2;
     config.crashServerUrl = @"https://test-android.crashsight.qq.com/rqd/pb/async";
     [CrashSight startWithAppId:@"0a4bb808fc" config:config];
     return YES;
