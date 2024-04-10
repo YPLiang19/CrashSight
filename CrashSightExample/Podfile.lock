@@ -1,5 +1,5 @@
 PODS:
-  - CrashSight (4.2.14)
+  - CrashSight (4.2.14.fix)
 
 DEPENDENCIES:
   - CrashSight (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CrashSight: d5a630590c06918e45d6aeb9dc482ae585faa489
+  CrashSight: 4b43676233c1c658237369640012bbb2fe9fd599
 
 PODFILE CHECKSUM: a0fb086b98839c0965ff24380978d9ad819e8564
 

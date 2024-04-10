@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "CrashSight"
-s.version      = "4.2.14"
+s.version      = "4.2.14.fix"
 s.summary      = "CrashSight"
 s.description  = <<-DESC
   CrashSight is a Crash catch SDK
@@ -14,5 +14,6 @@ s.vendored_frameworks  = 'CrashSight.framework'
 s.frameworks = 'SystemConfiguration', 'Security', 'UIKit'
 s.weak_framework = 'MetricKit'
 s.libraries = 'z', 'c++'
+s.static_framework = true
 end
 
