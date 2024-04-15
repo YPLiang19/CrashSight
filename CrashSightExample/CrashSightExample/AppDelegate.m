@@ -19,8 +19,8 @@
     CrashSightConfig *config = [[CrashSightConfig alloc] init];
     config.debugMode = YES;
     config.crashProcessTimeout = 2;
-    config.crashServerUrl = @"https://test-android.crashsight.qq.com/rqd/pb/async";
-    [CrashSight startWithAppId:@"0a4bb808fc" config:config];
+    config.crashServerUrl = @"https://ios.crashsight.qq.com/rqd/pb/async";
+    [CrashSight startWithAppId:@"9075855261" config:config];
     return YES;
 }
 

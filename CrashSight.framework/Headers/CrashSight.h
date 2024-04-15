@@ -1,7 +1,7 @@
 //
 //  CrashSight.h
 //
-//  Version: 4.2.14(950)
+//  Version: 4.2.14(959)
 //
 //  Copyright (c) 2017年 
 //
@@ -11,7 +11,7 @@
 #import "CrashSightConfig.h"
 #import "CrashSightLog.h"
 
-#define GCLOUD_VERSION_CRASHSIGHT  "GCLOUD_VERSION_CRASHSIGHT_4.2.14.950.sgprod"
+#define GCLOUD_VERSION_CRASHSIGHT  "GCLOUD_VERSION_CRASHSIGHT_4.2.14.959.sgprod"
 
 CS_START_NONNULL
 
