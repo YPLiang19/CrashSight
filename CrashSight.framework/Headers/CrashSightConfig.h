@@ -29,6 +29,7 @@
 #define CS_CALLBACK_FLAGS_JS      (0x1 << 1)
 #define CS_CALLBACK_FLAGS_CSHARP  (0x1 << 2)
 #define CS_CALLBACK_FLAGS_CRASH   (0x1 << 4)
+#define CS_CALLBACK_FLAGS_CUSTOM  (0x1 << 5)
 
 CS_START_NONNULL
 
@@ -39,6 +40,7 @@ typedef NS_ENUM(NSInteger, CSCallbackType) {
     CSCallbackTypeCShap = 3,
     CSCallbackTypeJS = 5,
     CSCallbackTypeLua = 6,
+    CSCallbackTypeCustom = 8,
 };
 typedef CSCallbackType CSExceptionType;
 
@@ -184,6 +186,9 @@ typedef CSCallbackType CSExceptionType;
  *
  */
 @property (nonatomic, copy) NSString *uploadUserAttchmentFilePath;
+
+
+@property (nonatomic, assign) BOOL ignoreCallSigaltstackFunctionFailed;
 
 
 @end

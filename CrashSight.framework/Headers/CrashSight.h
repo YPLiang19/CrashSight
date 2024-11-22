@@ -1,7 +1,7 @@
 //
 //  CrashSight.h
 //
-//  Version: 4.2.14(61)
+//  Version: 4.3.3(996)
 //
 //  Copyright (c) 2017年 
 //
@@ -11,7 +11,9 @@
 #import "CrashSightConfig.h"
 #import "CrashSightLog.h"
 
-#define GCLOUD_VERSION_CRASHSIGHT  "GCLOUD_VERSION_CRASHSIGHT_4.2.14.61.sgprod"
+#define GCLOUD_VERSION_CRASHSIGHT  "GCLOUD_VERSION_CRASHSIGHT_4.3.3.996.sgprod"
+
+
 
 CS_START_NONNULL
 
@@ -138,7 +140,8 @@ CS_START_NONNULL
                           callStack:(NSArray *)aStackArray
                           extraInfo:(NSDictionary *)info
                        terminateApp:(BOOL)terminate
-                 dumpDataType:(int) dumpDataType;
+                       dumpDataType:(int) dumpDataType
+                errorAttachmentPath:(NSString *)errorAttachmentPath;
 
 
 /**
@@ -157,7 +160,8 @@ CS_START_NONNULL
                           callStack:(NSArray *)aStackArray
                           extraInfoJSONString:(NSString *)info
                        terminateApp:(BOOL)terminate
-                       dumpDataType:(int) dumpDataType;
+                       dumpDataType:(int) dumpDataType
+                errorAttachmentPath:(NSString *)errorAttachmentPath;
 
 
 + (void) reportLogInfo:(NSString *)messageType message:(NSString *)message;
@@ -207,6 +211,18 @@ CS_START_NONNULL
 
 
 + (NSString *)crashSightSessionId;
+
++ (BOOL)isLastSessionCrash;
+
++ (NSString *)getLastSessionUserId;
+
++ (NSDictionary *)ccConifg;
+
++ (int)getExceptionType:(NSString *)name;
+
++ (void)setServerEnv:(NSString *)serverEnv;
+
++ (void)setEngineInfo:(NSString *)version buildConfig:(NSString *)buildConfig language:(NSString *)language locale:(NSString *)locale;
 
 CS_END_NONNULL
 

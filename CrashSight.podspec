@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "CrashSight"
-s.version      = "4.2.14.61"
+s.version      = "4.3.3.996"
 s.summary      = "CrashSight"
 s.description  = <<-DESC
   CrashSight is a Crash catch SDK
